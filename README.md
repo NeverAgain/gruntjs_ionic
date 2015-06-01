@@ -1,4 +1,4 @@
-# Gruntjs File For Ionic Framework
+# Gruntjs File for Ionic Framework with haml / scss / coffeescript
 
 ## Assumption:
 - Gruntfile.js is placed under project's root directory
@@ -11,3 +11,5 @@
 ````
 grunt serve
 ````
+
+a livereload server will be opened on http://localhost:9000. any new changes to haml / scss / coffeescript files will be coverted in real time and reloaded on the aforementioned url.
