@@ -32,7 +32,8 @@ module.exports = function(grunt) {
           cwd: 'coffee/',
           src: '**/*.coffee',
           dest: 'www/js',
-          ext: '.js'
+          ext: '.js',
+          extDot: 'last'
         }]
       }
     },
@@ -42,9 +43,10 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'scss/',
-          src: '**/*.scss',
+          src: ['**/*.scss'],
           dest: 'www/css',
-          ext: '.css'
+          ext: '.css',
+          extDot: 'last'
         }]
       }
     },
@@ -56,7 +58,8 @@ module.exports = function(grunt) {
           cwd: 'haml/',
           src: '**/*.haml',
           dest: 'www/',
-          ext: '.html'
+          ext: '.html',
+          extDot: 'last'
         }]
       }
     },
